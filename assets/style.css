@@ -1,14 +1,108 @@
-body {
-  font-family: "Quicksand", sans-serif;
+*{
+  box-sizing: border-box;
 }
+
+body {
+
+
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  font-weight: bold;
+  font-size: 28px;
+  opacity: 100%;
+}
+
+
 
 h2,
 h3 {
   color: #00a2c6;
 }
+aside {
+  float: right;
+  width: 25%;  
+}
+.profile header {
+  text-align: center;
+
+
+header{
+  display: inline;
+}
+
+}
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 20px;
+
+
+}
+.kiri {
+  float: left;
+  width: 70%;
+}
+
 
 footer {
   padding: 3vh;
   color: white;
   background-color: #00a2c6;
+}
+
+.featured-images {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+}
+
+nav li {
+  display: inline;
+  list-style-type:none ;
+  margin-right: 20px;
+  background-color:#287482 ;
+  padding: 12px;
+  border-radius: 50px;
+
+}
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+main{
+  padding: 20px;
+  overflow: auto;
+}
+
+@media screen and (max-width:1000px) {
+    #content,aside{
+      width: 100%;
+      padding: 0;
+    }
 }
