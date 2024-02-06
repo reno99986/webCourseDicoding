@@ -1,10 +1,8 @@
-*{
+* {
   box-sizing: border-box;
 }
 
 body {
-
-
   font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
@@ -21,24 +19,20 @@ nav a:hover {
   opacity: 100%;
 }
 
-
-
 h2,
 h3 {
   color: #00a2c6;
 }
 aside {
   float: right;
-  width: 25%;  
+  width: 25%;
 }
 .profile header {
   text-align: center;
 
-
-header{
-  display: inline;
-}
-
+  header {
+    display: inline;
+  }
 }
 .profile img {
   width: 200px;
@@ -49,14 +43,11 @@ header{
   border-radius: 5px;
   margin-top: 20px;
   padding: 20px;
-
-
 }
 .kiri {
   float: left;
   width: 70%;
 }
-
 
 footer {
   padding: 3vh;
@@ -78,15 +69,18 @@ footer {
   text-align: center;
   color: white;
 }
-
+nav ul {
+  padding-inline: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
 nav li {
-  display: inline;
-  list-style-type:none ;
+  list-style-type: none;
   margin-right: 20px;
-  background-color:#287482 ;
+  background-color: #287482;
   padding: 12px;
   border-radius: 50px;
-
 }
 nav {
   background-color: #00a2c6;
@@ -95,14 +89,23 @@ nav {
   top: 0;
 }
 
-main{
+main {
+  display: flex;
   padding: 20px;
-  overflow: auto;
+  gap: 1.5rem;
 }
 
-@media screen and (max-width:1000px) {
-    #content,aside{
-      width: 100%;
-      padding: 0;
-    }
+#content {
+  flex: 5;
+}
+aside {
+  flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
 }
