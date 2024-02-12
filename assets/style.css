@@ -23,17 +23,18 @@ h2,
 h3 {
   color: #00a2c6;
 }
-aside {
+/* aside {
   float: right;
   width: 25%;
-}
-.profile header {
+} */
+/* .profile header {
   text-align: center;
 
-  header {
+
+} */
+  /* header {
     display: inline;
-  }
-}
+  } */
 .profile img {
   width: 200px;
 }
@@ -41,13 +42,13 @@ aside {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 20px;
 }
-.kiri {
+/* .kiri {
   float: left;
   width: 70%;
-}
+} */
 
 footer {
   padding: 3vh;
@@ -70,7 +71,7 @@ footer {
   color: white;
 }
 nav ul {
-  padding-inline: 2rem;
+  padding-inline: 4rem;
   display: flex;
   gap: 2rem;
   justify-content: center;
@@ -97,15 +98,30 @@ main {
 
 #content {
   flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
 }
 aside {
   flex: 1;
+
 }
 
-@media screen and (max-width: 1000px) {
-  #content,
-  aside {
-    width: 100%;
-    padding: 0;
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
   }
 }
